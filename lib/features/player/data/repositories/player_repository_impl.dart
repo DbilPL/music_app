@@ -17,7 +17,7 @@ class PlayerRepositoryImpl extends PlayerRepository {
       return Right(result);
     }
     catch (e) {
-      return Left(Failure('Something went wrong!'));
+      return Left(Failure('Something went wrong! $e'));
     }
   }
 
@@ -29,7 +29,7 @@ class PlayerRepositoryImpl extends PlayerRepository {
       return Right(result);
     }
     catch (e) {
-      return Left(Failure('Something went wrong!'));
+      return Left(Failure('Something went wrong! $e'));
     }
   }
 

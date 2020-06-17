@@ -23,7 +23,7 @@ class MusicRepositoryImpl extends MusicRepository {
       return Right(result);
     }
     catch (e) {
-      return Left(Failure('Something went wrong!'));
+      return Left(Failure('Something went wrong! $e'));
     }
   }
 
@@ -54,7 +54,7 @@ class MusicRepositoryImpl extends MusicRepository {
       }
     }
     catch (e) {
-      return Left(Failure('Something went wrong!'));
+      return Left(Failure('Something went wrong! $e'));
     }
   }
   

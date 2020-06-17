@@ -4,6 +4,16 @@ abstract class PlayerState extends Equatable {
   const PlayerState();
 }
 
+class PlayerFailureState extends PlayerState {
+  
+  final String message;
+
+  const PlayerFailureState(this.message);
+  
+  @override
+  List<Object> get props => [message];
+}
+
 class PlayerInitial extends PlayerState {
   @override
   List<Object> get props => [];
